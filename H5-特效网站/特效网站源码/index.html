@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>please enter your title</title>
+		<meta charset="utf-8">
+		<meta name="Author" content="潭州学院-阿飞老师">
+		<style type='text/css'>
+			*{ margin:0; padding:0;}
+			body{
+				background:url(img/bg.jpg) center top no-repeat;;
+			}
+			#wrap{
+				width:1090px;
+				height:429px;
+				margin:160px auto;
+				overflow:hidden;
+			}
+			#wrap ul{
+				width:120%;
+			}
+			#wrap ul li{
+				list-style:none;
+				width:100px;
+				height:429px;
+				float:left;
+			}
+			#wrap ul li .txt{
+				width:100px;
+				height:429px;
+				background:rgba(0,0,0,.5);
+				overflow:hidden;
+			}
+			#wrap ul li .txt p{
+				padding:0px 42px;
+				background:rgba(0,0,0,.5);
+				color:#fff;
+				font-family:'Microsoft yahei';
+				font-size:14px;
+			}
+						#banner{
+							width:520px;
+							height:280px;
+							margin:20px auto;
+							border:1px solid red;
+							position:relative;
+						}
+						#banner .pic{
+							width:100%;
+							height:100%;
+							overflow:hidden;
+						}
+						li{
+							list-style:none;
+						}
+						#banner .pic ul{
+							width:1000%;
+							overflow:hidden;
+							margin-left:-520px;
+						}
+						#banner .pic ul li{
+							float:left;
+						}
+			
+						#banner .tab{
+							width:70px;
+							height:14px;
+							background:#fff;
+							background:rgba(255,255,255,0.5);
+							position:absolute;
+							left:50%;
+							margin-left:-35px;
+							bottom:10px;
+							border-radius:7px;
+						}
+						#banner .tab ul li{
+							width:10px;
+							height:10px;
+							border-radius:100%;
+							background:#999;
+							float:left;
+							margin:2px 2px;
+							cursor:pointer;
+						}
+						#banner .tab ul li.on{
+							background:#f60;
+						}
+						#banner .btn{
+							display:none;
+						}
+						#banner .btn div{
+							width:40px;
+							height:40px;
+							background:#000;
+							background:rgba(0,0,0,0.3);
+							color:#fff;
+							font-size:26px;
+							font-weight:bold;
+							text-align:center;
+							line-height:40px;
+							cursor:pointer;
+							position:absolute;
+							top:50%;
+							margin-top:-20px;
+						}
+						#leftBtn{
+							left:5px;
+						}
+						#rightBtn{
+							right:5px;
+						}
+						#banner .btn div.hover{
+							background:rgba(0,0,0,0.6)
+						}
+
+                     div{
+                     	font-size:30px;
+                     	font-family:'Microsoft yahei';
+                     	font-weight:bold;
+                     }
+                     li{
+                     	list-style:none;
+                     }
+                     #content{
+                     	width:1300px;
+                     	margin:0 auto;
+                     	position:relative;
+                     }
+                     #content div.nav{
+                     	width:1300px;
+                     	height:500px;
+                     	
+                     }
+                     #slide{
+                     	width:50px;
+                     	height:500px;
+                     	border:1px solid #ddd;
+                     	border-radius:3px;
+                     	background:#e6f7f7;
+                     	float:right;
+                     	position:fixed;
+                     	top:230px;
+                     }
+                     #slide ul li.control{
+                     	width:50px;
+                     	height:32px;
+                     	line-height:32px;
+                     	text-align:center;
+                     	font-size:12px;
+                     	color:#000;
+                     	font-weight:normal;
+                     	cursor:pointer;
+                     	transition:0.2s;
+                     	position:relative;
+                     	z-index:2;
+                     }
+                     #slide ul li.blue{
+                     	background:#00A1D6;
+                     	width:50px;
+                     	height:32px;
+                     	position:absolute;
+                     	top:0px;
+                     	z-index:1;
+                     	display:none;
+                     }
+                     #slide ul li:hover{
+                     	background:#00A1D6;
+                     	color:#fff;
+                     }
+                     #slide ul li.on{
+                     	background:#00A1D6;
+                     	color:#fff;
+                     }
+                     #slide_wrap{
+                     	position:absolute;
+                     	right:-10px;
+                     }
+					 
+
+			#div1{
+				width:1201px;
+				height:160px;
+				background:url(1.png);
+				margin:0 auto;
+			}
+			#div2{
+				width:1201px;
+				height:737px;
+				background:url(2.png);
+				margin:0 auto;
+			}
+			#div2.fixed{
+				margin-top:50px;
+			}
+			#nav{
+				width:100%;
+				min-width:1201px;
+				border-bottom:1px solid #f69;
+				height:50px;
+				line-height:50px;
+				background:#fff;
+			}
+			#nav.fixed{
+				position:fixed;
+				top:0;
+			}
+			#nav ul{
+				width:1201px;
+				margin:0 auto;
+				height:50px;
+			}
+			#nav ul li{
+				list-style:none;
+				float:left;
+				font-family:'Microsoft yahei';
+				font-size:16px;
+			}
+			#nav ul li a{
+				color:#000;
+				text-decoration:none;
+				padding:0 20px;
+			}
+			#nav ul li a:hover{
+				color:#f69;
+			}
+			#nav ul li.l2 a{
+				color:#f69;
+				font-weight:bold;
+			}
+								
+
+
+            			#wraps{
+            				width:600px;
+            				height:400px;
+            				margin:50px auto;
+            			}
+            			#topp{
+                width: 600px;
+                height: 150px;
+                border-bottom: 1px solid #bbb;
+                font-family: 'Microsoft yahei';
+            
+            			}
+            			#topp p font{
+            				font-size:14px;
+            				color:#000;
+            				margin-right:15px;
+            			}
+            			#topp p span{
+            				font-size:14px;
+            				color:#666;
+            				border:1px solid #999;
+            				display:inline-block;
+            				padding:8px;
+            				cursor:pointer;
+            			}
+            			#topp p span.on{
+            				border:2px solid #f60;
+            				padding:7px;
+            				background:url(img/on.png) no-repeat right bottom;
+            			}
+            			#bottom{
+            				width:600px;
+            				height:159px;
+            				padding-top:20px;
+            				font-family:'Microsoft yahei';
+            			}
+            			#bottom p font{
+            				color:#f60;
+            				font-size:20px;
+            				margin-right:20px;
+            			}
+            			#bottom p a{
+            				font-size:14px;
+            				color:blue;
+            			}
+            			#bottom p a i{
+            				margin:0 5px;
+            				color:#90c;
+            			}
+            			#bottom button{
+            				width:330px;
+            				height:50px;
+            				font-family:'Microsoft yahei';
+            				margin-top:20px;
+            				font-size:20px;
+            				background:#f60;
+            				color:#fff;
+            				border:none;
+            				
+            			}
+
+								
+		</style>
+	</head>
+	<body>
+		
+		<div id="wrap">
+			<ul>
+				<li style="background-image:url(img/1.jpg)">
+					<div class='txt'>
+						<p>我的个人拉萨之旅丨丨故事之城</p>
+					</div>
+				</li>
+				<li style="background-image:url(img/2.jpg)">
+					<div class='txt'>
+						<p>我的个人拉萨之旅丨丨故事之城</p>
+					</div>
+				</li>
+				<li style="background-image:url(img/3.jpg)">
+					<div class='txt'>
+						<p>我的个人拉萨之旅丨丨故事之城</p>
+					</div>
+				</li>
+				<li style="background-image:url(img/4.jpg); width:789px;">
+					<div class='txt'>
+						<p>我的个人拉萨之旅丨丨故事之城</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript">
+			$('#wrap ul li').hover(function(){
+				$(this).stop().animate({
+					width : '789px'
+				},500).siblings().stop().animate({
+					width : '100px'
+				},500);
+			});
+		</script>
+		
+		
+		
+				<div id="banner">
+					
+					<div class="pic">
+						<ul>
+							<li><a href=""><img src="img/e.jpg" /></a></li>
+							<li><a href=""><img src="img/a.jpg" /></a></li>
+							<li><a href=""><img src="img/b.jpg" /></a></li>
+							<li><a href=""><img src="img/c.jpg" /></a></li>
+							<li><a href=""><img src="img/d.jpg" /></a></li>
+							<li><a href=""><img src="img/e.jpg" /></a></li>
+						</ul>
+					</div>
+		
+					<div class="tab">
+						<ul>
+							<li class="on"></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div>
+		
+					<div class="btn">
+						<div id="leftBtn">&lt;</div>
+						<div id="rightBtn">&gt;</div>
+					</div>
+		
+				</div>
+		
+				<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+				<script type="text/javascript">
+					$(function(){
+						
+						var $tabLi = $('#banner .tab li');
+						var $picUl = $('#banner .pic ul');
+						var $banner = $('#banner');
+						var $btn = $('#banner .btn');
+						var $btnDiv = $('#banner .btn div');
+						var imgWidth = $('#banner .pic li').width();
+						var index = 0;
+						var nowTime = new Date();
+		
+						$tabLi.click(function(){
+							index = $(this).index();
+							$(this).addClass('on').siblings().removeClass('on');
+							$picUl.animate({
+								marginLeft : -imgWidth*(index+1) + 'px'
+							},300);
+						});
+		
+						$banner.hover(function(){
+							$btn.show();
+							clearInterval(timer);
+						},function(){
+							$btn.hide();
+							timer = setInterval(function(){
+								index ++;
+								fn();
+							},5000);
+						});
+		
+						$btnDiv.hover(function(){
+							$(this).addClass('hover');
+						},function(){
+							$(this).removeClass('hover');
+						}).click(function(){
+							if ( new Date() - nowTime > 350 )
+							{
+								nowTime = new Date();
+								var i = $(this).index();
+								i?index++:index--;
+								fn();
+							}
+						}).mousedown(function(){
+							return false;
+						});
+		
+						var timer = setInterval(function(){
+							index ++;
+							fn();
+						},5000);
+		
+						function fn(){
+							var liIndex = index;
+							if ( liIndex >= $tabLi.length )
+							{
+								liIndex = 0;
+							}
+							else if ( liIndex < 0 )
+							{
+								liIndex = $tabLi.length-1;
+							}
+							$tabLi.eq(liIndex).addClass('on').siblings().removeClass('on');
+							$picUl.animate({
+								marginLeft : -imgWidth*(index+1) + 'px'
+							},300,function(){
+								if ( index == $tabLi.length )
+								{
+									$picUl.css('marginLeft' , -imgWidth+'px');
+									index = 0;
+								}
+								else if ( index < 0 )
+								{
+									$picUl.css('marginLeft' , -imgWidth*($tabLi.length)+'px');
+									index = $tabLi.length-1;
+								}
+							});
+						}
+		
+					});
+				</script>
+		
+		
+		<div id='content'>
+		
+			<div id="slide_wrap">
+				<div id='slide'>
+					<ul>
+						<li class="control">动画</li>
+						<li class="control">音乐</li>
+						<li class="control">舞蹈</li>
+						<li class="control">番剧</li>
+						<li class="control">科技</li>
+						<li class="control">娱乐</li>
+						<li class="control">鬼畜</li>
+						<li class="control">电影</li>
+						<li class="control">TV剧</li>
+						<li class="control">直播</li>
+						<li class="control">时尚</li>
+						<li class="control">游戏</li>
+						<li class="blue"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src='jquery-1.12.1.min.js'></script>
+		<script type="text/javascript">
+		</script>
+		
+		
+
+
+
+
+
+		
+		<div id='div1'></div>
+		<div id="nav">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">最新</a></li>
+				<li><a href="">上衣</a></li>
+				<li><a href="">裙子</a></li>
+				<li><a href="">裤子</a></li>
+				<li><a href="">鞋子</a></li>
+				<li><a href="">包包</a></li>
+				<li><a href="">配饰</a></li>
+				<li><a href="">更多</a></li>
+				<li class='l2'><a href="">Hi范儿</a></li>
+				<li class='l2'><a href="">明星同款</a></li>
+				<li class='l2'><a href="">韩国馆</a></li>
+				<li class='l2'><a href="">团购</a></li>
+				<li class='l2'><a href="">福利社</a></li>
+			</ul>
+		</div>
+		<div id="div2"></div>
+
+		<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				(function(){
+					var $window = $(window);
+					var $nav = $('#nav');
+					var $div2 = $('#div2');
+
+					var navTop = $nav.offset().top;
+					$window.scroll(function(){
+						
+						var scrollTop = $(document).scrollTop();
+
+						if ( scrollTop >= navTop )
+						{
+							$nav.addClass('fixed');
+							$div2.addClass('fixed');
+						}else
+						{
+							$nav.removeClass('fixed');
+							$div2.removeClass('fixed');
+						};
+
+					});
+				})();
+				
+				
+			});
+		</script>
+
+
+		<div id="wraps">
+			<div id="topp">
+				<p id='model'>
+					<font>型号</font>
+					<span>4.7英寸</span>
+					<span>5.5英寸</span>
+				</p>
+				<p id='color'>
+					<font>颜色</font>
+					<span>银色</span>
+					<span>金色</span>
+					<span>深空灰色</span>
+				</p>
+				<p id='rom'>
+					<font>内存</font>
+					<span>16GB</span>
+					<span>64GB</span>
+					<span>128GB</span>
+				</p>
+</div>
+			<div id="bottom">
+				<p>价格： <font>￥ <span id='price'>5288</span>.00</font> <a href=''><i>移动赠费版</i>或<i>联通合约版</i>购机价格计算请点击这里>.< </a></p>
+				<button>立即购买</button>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			var mSpan = document.getElementById('model').getElementsByTagName('span');
+			var cSpan = document.getElementById('color').getElementsByTagName('span');
+			var rSpan = document.getElementById('rom').getElementsByTagName('span');
+			var bSpan = document.getElementById('banben').getElementsByTagName('span');
+			var aSpan = document.getElementsByTagName('span');
+			var oModel = document.getElementById('model');
+			var oRom = document.getElementById('rom');
+			var oPrice = document.getElementById('price');
+
+			mSpan[0].className = 'on';
+			cSpan[0].className = 'on';
+			rSpan[0].className = 'on';
+			bSpan[0].className = 'on';
+
+			for (var i=0;i<aSpan.length;i++ )
+			{
+				
+				aSpan[i].onclick = function(){
+					var siblings = this.parentNode.children;
+					for (var j=0;j<siblings.length;j++ )
+					{
+						siblings[j].className = '';
+					}
+					this.className = 'on';
+					
+					if ( this.parentNode == oModel || this.parentNode == oRom )
+					{
+						price();
+					}
+				};
+			};
+
+			function price(){
+				var p1 = 0;
+				var p2 = 0;
+				for (var i=0;i<mSpan.length;i++ )
+				{
+					if ( mSpan[i].className == 'on' )
+					{
+						p1 = i?6088:5288;
+						break;
+					};
+				};
+				for (var i=0;i<rSpan.length;i++ )
+				{
+					if ( rSpan[i].className == 'on' )
+					{
+						switch ( i )
+						{
+							case 0:
+								p2 = 0;
+								break;
+							case 1:
+								p2 = 800;
+								break;
+							case 2:
+								p2 = 1600;
+								break;
+						}
+					}
+				};
+				oPrice.innerHTML = p1+p2;
+			};
+
+			
+
+		</script>
+
+
+	</body>
+</html>
