@@ -28,7 +28,7 @@
 ## H5_两级界面
 - 以房地产为例子做成两级界面的展示。
 源码链接：[H5-两级界面](https://github.com/EasonQXF/H5-FinalExam)
-- ![H5-两级界面](https://raw.githubusercontent.com/EasonQXF/H5-FinalExam/master/H5_%E4%B8%A4%E7%BA%A7%E7%95%8C%E9%9D%A2/fdcyijijiemian.png)
 - ![H5-两级界面](https://raw.githubusercontent.com/EasonQXF/H5-FinalExam/master/H5_%E4%B8%A4%E7%BA%A7%E7%95%8C%E9%9D%A2/fdc%E4%BA%8C%E7%BA%A7%E7%95%8C%E9%9D%A2.png)
+- ![H5-两级界面](https://raw.githubusercontent.com/EasonQXF/H5-FinalExam/master/H5_%E4%B8%A4%E7%BA%A7%E7%95%8C%E9%9D%A2/fdcyijijiemian.png)
 
 -  **已上是H5期末作业的完成情况，感谢胡美香老师的教导！** 
